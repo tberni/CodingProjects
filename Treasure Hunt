@@ -1,0 +1,46 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+choice1 = input("You're at a cross road. Where do you want to go? Type 'left' or 'right'. \n")
+if choice1 == "Left" or choice1 == "left":
+  choice2 = input("You take the path to the left.As you are walking you realize that you are climbing a mountain. Do you wish to continue? Type 'yes' or 'no'.\n")
+  if choice2 == "yes" or choice2=="Yes":
+    print("You continue to climb the mountain. You come upon a dragon's lair and are incinerated.")
+  else:
+    print("You slip going down the mountain, fall off a cliff and die.")
+else:
+  choice3 = input("You take the path to the right. You come upon a lake with an island in the middle of it. Do you wait for a boat or do you swim? Type 'wait' to wait or 'swim' to swim.\n")
+  if choice3 == "swim" or choice3 == "Swim":
+      print("You attempt to swim across the lake. However, your splashing disturbs the lake monster and you are eaten.")
+  else:
+    choice4 = input("You decide to wait for a boat. Eventually one makes its way to shore. You hop on and make your way to the island. Upon your arrival on the island you see two houses, one blue and one red. Which one do you go to? Type 'red' or 'blue'.\n")
+    if choice4=="red" or choice4=="Red":
+      print("You approach the red house. When you knock on the door, a witch answers. She grabs you and eats you.")
+    else:
+      print("You approach the blue house. The door swings open before you can knock and you step inside. There are piles of treasure everywhere. You did it!")
+print("GAME OVER")
